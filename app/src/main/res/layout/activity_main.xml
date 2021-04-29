@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/teal_700"
+    >
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/headingforgotpas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="23sp"/>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headingforgotpas"
+        android:src="@drawable/ic_baseline_lock_24"
+        android:layout_marginStart="135dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lock"
+                android:padding="8dp">
+
+
+                 <com.google.android.material.textfield.TextInputLayout
+                     android:id="@+id/Phone"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="12dp"
+                     android:hint="@string/PhoneNo"
+                     app:boxCornerRadiusBottomEnd="23dp"
+                     app:boxCornerRadiusTopStart="23dp"
+                     app:helperText="Please Enter Phone Number"
+                     app:startIconDrawable="@drawable/phone"
+                     >
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/oldpas"
+                    android:layout_below="@id/Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:boxCornerRadiusBottomEnd="23dp"
+                    app:boxCornerRadiusTopStart="23dp"
+                    android:hint="@string/OldPass"
+                    app:helperText="Please Enter Old Password"
+                    app:startIconDrawable="@drawable/ic_baseline_error_outline"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Newpas"
+                    android:layout_below="@id/oldpas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:boxCornerRadiusBottomEnd="23dp"
+                    app:boxCornerRadiusTopStart="23dp"
+                    android:hint="@string/NewPass"
+                    app:helperText="Please Enter New Password"
+                    app:startIconDrawable="@drawable/ic_baseline_done"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!--btn-->
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Newpas"
+                    android:text="@string/Reset_Pass"
+                    android:gravity="center"
+                    android:backgroundTint="@color/teal_200"
+                    android:textColor="@color/white">
+
+
+                </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+
+
+            </RelativeLayout>
+
+
+</RelativeLayout>

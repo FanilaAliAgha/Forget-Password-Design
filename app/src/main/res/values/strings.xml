@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">forget pass1</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="OldPass">Old Password</string>
+    <string name="PhoneNo">Phone Number</string>
+    <string name="NewPass">New Password</string>
+    <string name="Reset_Pass">Reset Password</string>
+</resources>
